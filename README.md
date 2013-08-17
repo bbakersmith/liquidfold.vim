@@ -1,5 +1,5 @@
 # Liquid Fold
-### A vim plugin for syntax folding in Liquid templates
+### A vim plugin for syntax folding in [Liquid templates](http://liquidmarkup.org/)
 
 Liquid Fold provides syntax folding for any tags that have an associated end tag, including:
 
