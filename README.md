@@ -31,6 +31,7 @@ By default, all foldable tags will be folded. To specify a subset of these tags 
 liquidfold.vim is maintained at:
 
 [https://bitbucket.org/bbakersmith/liquidfold.vim](https://bitbucket.org/bbakersmith/liquidfold.vim)
+
 [https://github.com/bbakersmith/liquidfold.vim](https://github.com/bbakersmith/liquidfold.vim)
 
 
