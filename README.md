@@ -1,6 +1,6 @@
 # **liquidfold.vim**
 
-liquidfold.vim provides syntax folding for [Liquid templates](http://liquidmarkup.org/). It supports any tags that have an associated end tag, including:
+liquidfold.vim provides Vim syntax folding for [Liquid templates](http://liquidmarkup.org/). It supports any tags that have an associated end tag, including:
 
     {% comment %} {% endcomment %}
     {% raw %} {% endraw %}
@@ -24,6 +24,14 @@ Use [pathogen.vim](https://github.com/tpope/vim-pathogen), and clone liquidfold.
 By default, all foldable tags will be folded. To specify a subset of these tags for folding, set g:liquidfold_words in your vimrc.
 
     let g:liquidfold_words = "block,if"
+
+
+## Source
+
+liquidfold.vim is maintained at:
+
+[https://bitbucket.org/bbakersmith/liquidfold.vim](https://bitbucket.org/bbakersmith/liquidfold.vim)
+[https://github.com/bbakersmith/liquidfold.vim](https://github.com/bbakersmith/liquidfold.vim)
 
 
 ## License
