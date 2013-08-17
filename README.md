@@ -1,4 +1,4 @@
-# **liquidfold.vim**
+# liquidfold.vim
 
 liquidfold.vim provides syntax folding for [Liquid templates](http://liquidmarkup.org/). It supports any tags that have an associated end tag, including:
 
