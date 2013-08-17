@@ -1,7 +1,7 @@
 " set defaults if g:liquid_foldwords hasn't been set in .vimrc
 "
 if !exists('g:liquid_foldwords')
-  let g:liquid_foldwords = "block,if"
+  let g:liquid_foldwords = "comment,raw,if,case,for,tablerow,block"
 endif
 
 
@@ -19,9 +19,9 @@ endfunction
 " initialize syntax folding
 "
 function! InitLiquidFolds()
-  syn sync fromstart
   setlocal foldmethod=syntax
   call MarkLiquidFolds()
+  syn sync fromstart
 endfunction
 
 
