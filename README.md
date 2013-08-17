@@ -21,7 +21,7 @@ Use [pathogen.vim](https://github.com/tpope/vim-pathogen), and clone liquidfold.
 
 ## Customization
 
-To specify which tags you want to make foldable, set g:liquidfold_words in your vimrc.
+By default, all foldable tags will be folded. To specify a subset of these tags for folding, set g:liquidfold_words in your vimrc.
 
     let g:liquidfold_words = "block,if"
 
