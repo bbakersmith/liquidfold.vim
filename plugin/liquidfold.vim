@@ -1,14 +1,14 @@
-" set defaults if g:liquid_foldwords hasn't been set in .vimrc
+" set defaults if g:liquidfold_words hasn't been defined in .vimrc
 "
-if !exists('g:liquid_foldwords')
-  let g:liquid_foldwords = "comment,raw,if,case,for,tablerow,block"
+if !exists('g:liquidfold_words')
+  let g:liquidfold_words = "comment,raw,if,case,for,tablerow,block"
 endif
 
 
 " define fold regions using foldwords
 "
 function! MarkLiquidFolds()
-  let foldwords = '\('.join(split(g:liquid_foldwords,","),'\|').'\)'
+  let foldwords = '\('.join(split(g:liquidfold_words,","),'\|').'\)'
   let foldstart = '^.*{%\s\?'.foldwords.'.*%}.*$'
   let foldend = '^.*{%\s\?end'.foldwords.'.*%}.*$' 
   let foldcommand = "syn region LiquidFold start='".foldstart."' end='".foldend."' fold transparent keepend extend"

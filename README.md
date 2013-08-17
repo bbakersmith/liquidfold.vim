@@ -1,7 +1,6 @@
-# Liquid Fold
-### A vim plugin for syntax folding in Liquid templates
+# **liquidfold.vim**
 
-Liquid Fold provides syntax folding for any tags that have an associated end tag, including:
+liquidfold.vim provides syntax folding for [Liquid templates](http://liquidmarkup.org/). It supports any tags that have an associated end tag, including:
 
     {% comment %} {% endcomment %}
     {% raw %} {% endraw %}
@@ -14,7 +13,7 @@ Liquid Fold provides syntax folding for any tags that have an associated end tag
 
 ## Installation
 
-Use [pathogen.vim](https://github.com/tpope/vim-pathogen), and clone Liquid Fold into your ~/.vim/bundle directory.
+Use [pathogen.vim](https://github.com/tpope/vim-pathogen), and clone liquidfold.vim into your ~/.vim/bundle directory.
 
     cd ~/.vim/bundle
     git clone git@bitbucket.org:bbakersmith/liquidfold.vim.git
@@ -22,9 +21,9 @@ Use [pathogen.vim](https://github.com/tpope/vim-pathogen), and clone Liquid Fold
 
 ## Customization
 
-To specify which tags you want to make foldable, set g:liquid_foldwords in your vimrc.
+To specify which tags you want to make foldable, set g:liquidfold_words in your vimrc.
 
-    let g:liquid_foldwords = "block,if"
+    let g:liquidfold_words = "block,if"
 
 
 ## License
