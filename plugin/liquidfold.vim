@@ -44,7 +44,7 @@ function! LiquidFold()
 endfunction
 
 
-" avoid conflicts with other autocommands and automatically fold liquid files
+" avoid duplicate autocommands; set filetype for .liquid files and fold them
 "
 augroup ft_liquid
   au!
