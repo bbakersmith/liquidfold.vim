@@ -16,7 +16,9 @@ function! LiquidFold()
     " define fold regions using foldwords
     "
     let foldwords = '\('.join(split(g:liquidfold_words,","),'\|').'\)'
-    let foldstart = '^.*{%\s\?'.foldwords.'.*%}.*$'
+    " exclude lines with both a close tag
+    let foldstart = '^.*{%\s\?\'.foldwords.'\(.*{%\s\?end'.foldwords.'.*\)\@!.*$'
+    " TODO exclude lines with an open tag
     let foldend = '^.*{%\s\?end'.foldwords.'.*%}.*$' 
     let foldcommand = "syn region LiquidFold start='".foldstart."' end='".foldend."' fold transparent keepend extend"
     execute foldcommand
