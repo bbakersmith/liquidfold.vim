@@ -2,11 +2,10 @@
 "
 function! s:_getFoldWords()
   if exists('g:liquidfold_words')
-    let words = g:liquidfold_words
+    return g:liquidfold_words
   else
-    let words = "comment,raw,if,case,for,tablerow,block"
+    return "comment,raw,if,case,for,tablerow,block"
   endif
-  return words
 endfunction
 
 
