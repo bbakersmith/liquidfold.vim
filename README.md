@@ -35,6 +35,11 @@ liquidfold.vim is maintained at:
 [https://github.com/bbakersmith/liquidfold.vim](https://github.com/bbakersmith/liquidfold.vim)
 
 
+## Version
+
+liquidfold.vim v1.2
+
+
 ## License
 
 The MIT License (MIT)
